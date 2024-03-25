@@ -1,0 +1,204 @@
+:root{
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+.main-button{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.main-button:hover{
+    color: var(--yellow-color);
+}
+/* start navbar  */
+nav{
+    background-color: var(--dark-color);
+}
+.navbar .search svg{
+    color: var(--green-color);
+    font-size: 20px;
+    border-left: 1.5px solid var(--green-color);
+    padding-left: 8px;
+    cursor: pointer;
+}
+nav .navbar-nav .nav-link{
+    color: white;
+}
+nav .navbar-nav .nav-link.active ,
+nav .navbar-nav .nav-link:hover ,
+nav .navbar-nav .nav-link:focus{
+    color: var(--green-color);
+}
+nav .navbar-toggler{
+    color: #ffffff;
+    font-size: 30px;
+    border: 1px solid white;
+}
+nav .navbar-toggler:focus{
+    box-shadow: none;
+    border: 1px solid var(--green-color);
+}
+/* end navbar  */
+/* satrt landing */
+.landing{
+    height: calc(100vh - 72px);
+    background-color: var(--dark-color);
+}
+/* end landing */
+/* start title  */
+.main-title::before{
+    position: absolute;
+    width: 120px;
+    background-color: var(--green-color);
+    content: '';
+    height: 2px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* end title  */
+/* start feature */
+.feature .icon-holder{
+    height: 12rem;
+}
+.feature .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feature .icon-holder .number{
+    height: 100%;
+    color: var(--section-color);
+}
+.feature .icon-holder .icon{
+    color: var(--green-color);
+}
+.feature h4{
+    color: var(--yellow-color);
+}
+/* end feature */
+/* start our work  */
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work ul .active{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.our-work ul li{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red-color);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgb(51 209 204 / 70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    transform: translateX(calc(-100% + -5px));
+}
+.our-work .box:hover::before{
+    transform: translateX(0)
+}
+/* end our work  */
+/* start stuff  */
+.stuff .discription{
+    max-width: 550px;
+}
+/* end stuff  */
+/* start team  */
+.team{
+    background-color: var(--section-color);
+}
+.team h1{
+    color: var(--yellow-color);
+}
+.team h3{
+    background-color: var(--green-color);
+    color: white;
+}
+/* end team  */
+/* start project  */
+.project{
+    background-color: var(--dark-color);
+}
+/* end project  */
+/* start subscripe */
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.subscribe input[type=text]{
+    caret-color: white;
+}
+.subscribe input[type=text]:focus{
+    outline: none;
+}
+.subscribe input[type=text]::placeholder{
+    color: white;
+    font-weight: bold;
+}
+.subscribe input[type=submit]{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+/* end subscripe */
+/* start footer */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copy-right > span{
+    color: var(--green-color);
+}
+.footer .copy-right div span{
+    color: var(--yellow-color);
+}
+.footer ul li svg{
+    width: 20px;
+    height: 20px;
+}
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .tiktok{
+    background-color: black;
+}
+.footer .instagram{
+    background-image: 
+    linear-gradient(
+        #405de6,
+        #5851db,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f56040,
+        #f77737,
+        #fcaf45,
+        #ffdc80);
+}
+.footer .telegram{
+    background-color: #0088cc;
+}
+/* end footer */
+
+
+
+
+
